@@ -1,0 +1,41 @@
+.main {
+	text-align: center;
+}
+
+.main-heading {
+	font-size: 2em;
+	font-family: Arial;
+}
+
+.clear-button {
+	font-size: 3em;
+	border-radius: 0.2em;
+	margin: 0.5em;
+	background-color: #0077aa;
+}
+
+.drawing {
+	display: inline-block;
+}
+
+.middle {
+	border: 0.5em solid #770033;
+	margin: auto;
+}
+
+.row {
+	margin: auto;
+	display: block;
+	width: 800px;
+	height: 50px;
+}
+
+.square {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+
+.highlighted {
+	background-color: red;
+}
