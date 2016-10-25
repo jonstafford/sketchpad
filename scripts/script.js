@@ -30,10 +30,7 @@ var createGrid = function(size) {
 	
 	var squareDimension = Math.floor(drawingAreaWidth / size);
 	
-	//console.log("squareDimension: " + squareDimension);
-	
 	var middle = $(".middle");
-
 	for (var i = 0; i < size; i++)
 	{
 		var row = $("<div class='row row"+i+"'></div>");
@@ -45,7 +42,10 @@ var createGrid = function(size) {
 		
 		middle.append(row);
 	}
-			
+	
+	$(".row").css({"width" : squareDimension*size + "px", "height" : squareDimension + "px"});
+	$(".square").css({"width" : squareDimension + "px", "height" : squareDimension + "px"})
+	
 	$(".square").on("mouseenter", highlightSquare);
 }
 
